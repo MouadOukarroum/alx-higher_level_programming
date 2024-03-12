@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 tebahpla = []
 for i in reversed(range(97, 123)):
     if i % 2 == 0:
