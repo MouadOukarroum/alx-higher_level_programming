@@ -6,7 +6,10 @@ def main():
     args = sys.argv
     length = len(args)
     if length < 2:
-        print("{} argument.".format(length - 1))
+        print("{} arguments.".format(length - 1))
+    elif length == 2:
+        print("{} argument:".format(length - 1))
+        print("{}: {}".format(1, args[1]))
     else:
         print("{} arguments:".format(length - 1))
         for i in range(length):
