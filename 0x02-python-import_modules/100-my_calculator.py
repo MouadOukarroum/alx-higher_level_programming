@@ -13,14 +13,18 @@ if __name__ == "__main__":
         print("Unknown operator. Availabe operators: +, -, * and /")
         sys.exit(1)
     else:
-        a = int(args[1])
-        op = args[2]
-        b = int(args[3])
-        if op == "+":
-            print("{} + {} = {}".format(a, b, add(a, b)))
-        elif op == "-":
-            print("{} - {} = {}".format(a, b, sub(a, b)))
-        elif op == "*":
-            print("{} * {} = {}".format(a, b, mul(a, b)))
-        else:
-            print("{} / {} = {}".format(a, b, div(a, b)))
+        try:
+            a = int(args[1])
+            op = args[2]
+            b = int(args[3])
+            if op == "+":
+                print("{} + {} = {}".format(a, b, add(a, b)))
+            elif op == "-":
+                print("{} - {} = {}".format(a, b, sub(a, b)))
+            elif op == "*":
+                print("{} * {} = {}".format(a, b, mul(a, b)))
+            else:
+                print("{} / {} = {}".format(a, b, div(a, b)))
+        except ValueError:
+            print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+            sys.exit(1)
