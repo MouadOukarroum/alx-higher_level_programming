@@ -10,5 +10,5 @@ def main():
             print("{}".format(name))
 
 
-if __main__ == "__main__":
+if __name__ == "__main__":
     main()
