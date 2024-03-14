@@ -5,8 +5,9 @@ import importlib
 def main():
     hidden_4 = importlib.import_module("hidden_4")
     all_names = dir(hidden_4)
-    filtered = [name for names in all_names if not names.startswith("__")]
-    print(filtered)
+    for name in all_names:
+        if not name.startswith("__"):
+            print("{}".format(name))
 
 
 if __main__ == "__main__":
