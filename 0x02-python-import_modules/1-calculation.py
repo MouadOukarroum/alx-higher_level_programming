@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from calculation_1 import sub, add, mul, div
+from calculation_1 import add, sub, mul, div
 
 
 def main():
