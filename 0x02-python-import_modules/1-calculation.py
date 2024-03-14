@@ -5,10 +5,10 @@ from calculation_1 import sub, add, mul, div
 def main():
     a = 10
     b = 5
-    print(add(a, b))
-    print(sub(a, b))
-    print(mul(a, b))
-    print(div(a, b))
+    print(a, "+" ,b, "=", add(a, b))
+    print(a, "-", b, "=", sub(a, b))
+    print(a, "*", b, "=", mul(a, b))
+    print(a, "/", b, "=", div(a, b))
 
 
 if __name__ == "__main__":
