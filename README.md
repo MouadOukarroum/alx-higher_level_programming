@@ -1,1 +1,1 @@
-# Python is cool:
+# Python data structures: sets and dicts
